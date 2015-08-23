@@ -62,4 +62,14 @@ describe Basket do
       end
     end
   end
+
+  describe '#clear' do
+    let(:store) { double('Store', find_product: product) }
+
+    it 'removes all products from the basket' do
+      basket.add(product)
+      basket.clear
+      expect(basket.total.value).to eq(0)
+    end
+  end
 end
