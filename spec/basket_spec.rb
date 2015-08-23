@@ -16,7 +16,7 @@ describe Basket do
     context 'product not present in store' do
       let(:store) { double('Store', find_product: nil) }
 
-      it 'adds the product to the basket' do
+      it "doesn't add the product to the basket" do
         expect(basket.add(product.code)).to be false
       end
     end
@@ -34,7 +34,7 @@ describe Basket do
     context 'product not present in store' do
       let(:store) { double('Store', find_product: nil) }
 
-      it 'adds the product to the basket' do
+      it "doesn't add the product to the basket" do
         expect { basket.add!(product.code) }.to raise_error('ProductInvalid')
       end
     end
