@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/dsaenztagarro/checkout.svg?branch=master)](https://travis-ci.org/dsaenztagarro/checkout)
 [![Code Climate](https://codeclimate.com/github/dsaenztagarro/checkout/badges/gpa.svg)](https://codeclimate.com/github/dsaenztagarro/checkout)
 [![Dependency Status](https://gemnasium.com/dsaenztagarro/checkout.svg)](https://gemnasium.com/dsaenztagarro/checkout)
 
