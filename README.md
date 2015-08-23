@@ -5,19 +5,39 @@
 
 # checkout
 
-Installation
-------------
+Branches
+--------
 
-```shell
-gem install bundle rake -N
-bundle
-```
+- [master][1]: My default implementation! It modifies the expected interface in 
+    order to avoid any kind of coupling in the implementation. Something like 
+    this:
+
+- [cabify][2]: Just the implementation you where looking for.
+
+*IMPORTANT*
+
+In order to see implementations in action just take a look at acceptance tests!
 
 Rake tasks
 ----------
 
-- `test:integration`: run acceptance tests with `cucumber`
+- `test:acceptance`: run acceptance tests with `cucumber`
 - `test:unit`: run unit tests with `rspec`
+- `test:all`: run all tests 
+- `quality_metrics:rubocop`: run rubocop
+- `quality_metrics:reek`: run reek
+- `quality_metrics:cane`: run cane
+- `quality_metrics:all`: run all quality metric tasks
+
+Coverage
+--------
+
+To generate locally coverage report:
+
+```
+export COVERAGE=true
+bundle exec rake test:all
+```
 
 Documentation
 -------------
@@ -25,3 +45,7 @@ Documentation
 1. Run local documentation server: `yard server`
 
 2. [Check documentation](http://localhost:8808)
+
+
+[1]: https://github.com/dsaenztagarro/checkout/tree/master
+[2]: https://github.com/dsaenztagarro/checkout/tree/cabify
