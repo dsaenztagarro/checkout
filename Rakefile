@@ -9,7 +9,7 @@ require 'rubocop/rake_task'
 Coveralls::RakeTask.new
 
 namespace :quality_metrics do
-  desc 'Run RuboCop on the lib directory'
+  desc 'Run rubocop'
   RuboCop::RakeTask.new(:rubocop) do |task|
     task.patterns = ['lib/**/*.rb']
     # only show the files with failures
@@ -18,6 +18,7 @@ namespace :quality_metrics do
     task.fail_on_error = true
   end
 
+  desc 'Run reek to report code smells'
   Reek::Rake::Task.new do |t|
     t.fail_on_error = true
     t.verbose = false
