@@ -12,12 +12,11 @@ gem install bundle rake -N
 bundle
 ```
 
-Tests
------
+Rake tasks
+----------
 
-Run acceptance tests with: `cucumber`
-
-Run unit tests with: `rspec`
+- `test:integration`: run acceptance tests with `cucumber`
+- `test:unit`: run unit tests with `rspec`
 
 Documentation
 -------------

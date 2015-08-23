@@ -8,10 +8,11 @@ rvm:
   - 2.2
   - ruby-head
 
-env:
-  - TEST_SUITE=units
-  - TEST_SUITE=integration
-
 bundler_args: --without development --binstubs
 
-script: "bundle exec rake test:$TEST_SUITE"
+script:
+  - export COVERAGE=true
+  - rubocop
+  - reek lib/
+  - cane
+  - bundle exec rake test_with_coveralls
