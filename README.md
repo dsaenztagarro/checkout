@@ -9,12 +9,11 @@ Branches
 --------
 
 - [master][1]: My default implementation! It modifies the expected interface in 
-    order to avoid any kind of coupling in the implementation. Something like 
-    this:
+    order to avoid any kind of coupling in the implementation. 
 
-- [cabify][2]: Just the implementation you where looking for.
+- [cabify][2]: Just the implementation you were looking for.
 
-*IMPORTANT*
+**IMPORTANT**
 
 In order to see implementations in action just take a look at acceptance tests!
 
