@@ -3,11 +3,13 @@ source 'http://rubygems.org'
 gem 'rake'
 gem 'yard'
 
-group :development do
+group :development, :test do
   gem 'cane'
   gem 'reek'
   gem 'rubocop'
+end
 
+group :development do
   gem 'rb-fchange', require: false # Windows
   gem 'rb-fsevent', require: false # OS X
   gem 'rb-inotify', require: false # Linux

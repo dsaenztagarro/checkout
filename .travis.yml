@@ -6,5 +6,12 @@ rvm:
   - 2.0.0
   - 2.1
   - 2.2
+  - ruby-head
 
-install: ruby -S bundle install --without development
+env:
+  - TEST_SUITE=units
+  - TEST_SUITE=integration
+
+bundler_args: --without development --binstubs
+
+script: "bundle exec rake test:$TEST_SUITE"
