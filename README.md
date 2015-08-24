@@ -8,7 +8,7 @@
 Branches
 --------
 
-Exercise has been solved in two flavors:
+Exercise has been solved in two flavours:
 
 - [master][1]: My default implementation! It modifies the expected interface in 
     order to avoid any kind of coupling in the implementation. Winner choice!
