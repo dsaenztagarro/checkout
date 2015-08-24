@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/dsaenztagarro/checkout.svg?branch=master)](https://travis-ci.org/dsaenztagarro/checkout)
+[![Build Status](https://travis-ci.org/dsaenztagarro/checkout.svg?branch=cabify)](https://travis-ci.org/dsaenztagarro/checkout)
 [![Code Climate](https://codeclimate.com/github/dsaenztagarro/checkout/badges/gpa.svg)](https://codeclimate.com/github/dsaenztagarro/checkout)
-[![Coverage Status](https://coveralls.io/repos/dsaenztagarro/checkout/badge.svg?branch=master&service=github)](https://coveralls.io/github/dsaenztagarro/checkout?branch=master)
+[![Coverage Status](https://coveralls.io/repos/dsaenztagarro/checkout/badge.svg?branch=cabify&service=github)](https://coveralls.io/github/dsaenztagarro/checkout?branch=cabify)
 [![Dependency Status](https://gemnasium.com/dsaenztagarro/checkout.svg)](https://gemnasium.com/dsaenztagarro/checkout)
 
 # checkout
