@@ -13,6 +13,8 @@ class Store
     @products[product.code] = product
   end
 
+  # Adds a pricing rule to the store
+  # @param rule [Object]
   def add_pricing_rule(rule)
     @pricing_rules << rule
   end
