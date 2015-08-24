@@ -3,9 +3,11 @@ class Checkout
   # @param engine [Engine] The rule engine that fires pricing rules
   # @param basket [Basket] The container for products purchased. Verify that the
   #   products scanned are valid
-  def initialize(engine, basket)
-    @engine = engine
-    @basket = basket
+  def initialize(pricing_rules)
+    store = CabifyStore.new
+    pricing_rules.each { |rule| store.add_pricing_rule(rule) }
+    @engine = Engine.new(store)
+    @basket = Basket.new(store)
   end
 
   # Adds item to basket
@@ -19,10 +21,5 @@ class Checkout
   # @return [String] the total price of the purchase after applying discounts
   def total
     @basket.total.deduct(@engine.execute(@basket).as_discount).to_s
-  end
-
-  # Remove all items from basket
-  def clear
-    @basket.clear
   end
 end
